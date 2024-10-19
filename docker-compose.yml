@@ -1,0 +1,10 @@
+version: "3.0"
+
+services:
+  api: &main_app
+    build:
+      context: ./api
+      dockerfile: Dockerfile
+    container_name: "api"
+    ports:
+      - 8080:8080
